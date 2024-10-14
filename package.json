@@ -1,19 +1,49 @@
 {
-  "name": "video-transcoder",
+  "name": "sharease-backend",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node-dev ./src/main.ts",
+    "dev": "export DEBUG=*; ts-node-dev ./src/main.ts"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/koa": "^2.15.0",
+    "@types/koa-bodyparser": "^4.3.12",
+    "@types/koa-router": "^7.4.8",
+    "@types/koa-static": "^4.0.4",
+    "@types/node": "^22.5.1",
+    "@types/recursive-readdir": "^2.2.4",
+    "nodemon": "^3.1.4",
+    "sequelize-cli": "^6.6.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.2"
+  },
   "dependencies": {
-    "async": "^2.6.0",
-    "child_process": "^1.0.2",
-    "express": "^4.16.3",
-    "express-easy-router": "^1.1.2",
-    "ffmpeg": "0.0.4",
-    "socket.io": "^2.1.0"
+    "@sequelize/cli": "^7.0.0-alpha.41",
+    "bcrypt": "^5.1.1",
+    "bee-queue": "^1.7.1",
+    "dotenv": "^16.4.5",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "koa": "^2.15.3",
+    "koa-body": "^6.0.1",
+    "koa-context-validator": "^1.0.0",
+    "koa-jwt": "^4.0.4",
+    "koa-router": "^12.0.1",
+    "koa-static": "^5.0.0",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.4.5",
+    "recursive-readdir": "^2.2.3",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7",
+    "winston": "^3.13.0"
   }
 }
